@@ -1,0 +1,13 @@
+<% provide(:title, 'All users') %>
+<h1>All users</h1>
+
+<%= will_paginate %>
+
+<ul class="users">
+  <%= render @users %>
+</ul>
+  <%# note that this syntax konws to iterate through a collection of User %>
+  <%# objects and render each of them using the '_user.html.erb' partial %>
+
+
+<%= will_paginate %>
